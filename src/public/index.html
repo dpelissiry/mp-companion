@@ -1,0 +1,52 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MP Search</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" type="text/javascript"></script>
+</head>
+<body>
+  <div class="background"></div>
+  <div class="header">
+    <h1>Discover Your Next Climb</h1>
+
+  </div>
+  <div class="content">
+    <div class="search-container">
+      
+      <input type="text" id="searchInput" placeholder="Search climbs">
+      <button onclick="search()">Search</button>
+      
+    </div>
+    <div class = "options-container">
+
+    <div>
+      <input type="radio" id="boulder" name="type" value="boulder" checked />
+      <label for="boulder">Boulder</label>
+    </div>
+
+    <div>
+      <input type="radio" id="sport" name="type" value="sport" />
+      <label for="sport">Sport</label>
+    </div>
+
+    <div>
+      <input type="radio" id="trad" name="type" value="trad" />
+      <label for="trad">Trad</label>
+    </div>
+    </div>
+    
+  </div>
+  <div class="results-container" id="results-container">
+    <div class="search-result" id="search-result"></div>
+  </div>
+  
+  
+
+  
+</body>
+</html>

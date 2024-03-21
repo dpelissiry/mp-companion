@@ -1,0 +1,144 @@
+/* Reset some basic elements */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Improved styling for the header */
+.header {
+  text-align: center; /* Center header content */
+  padding: .5rem;
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+  max-width: 600px; /* Max width for larger screens */
+  margin: auto; /* Center the content */
+  margin-bottom: 2rem; /* Add some space below the header */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 1.3rem;
+  color: black
+}
+
+/* Adjust the background styling for better layout */
+.background {
+  position: fixed; /* Fixed position to stay in place on scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('buttermilks.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+/* Ensure the content stands out against the background */
+.content {
+  position: relative;
+  z-index: 1;
+  width: 90%; /* Slightly reduce width for padding */
+  max-width: 800px; /* Max width for larger screens */
+  margin: auto; /* Center the content */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* More prominent shadow for depth */
+}
+.options-container {
+  
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Center items horizontally */
+  flex-direction: row; /* Stack items vertically */
+  align-items: center; /* Center items vertically */
+  gap: 30px
+}
+.search-container {
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Center items horizontally */
+  flex-direction: row; /* Stack items vertically */
+  align-items: center; /* Center items vertically */
+  gap: 10px
+}
+
+.results-container{
+  padding: 30px;
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Center items horizontally */
+  flex-direction: row; /* Stack items vertically */
+  align-items: center; /* Center items vertically */
+  gap: 10px
+  
+}
+.search-result{
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+}
+.search-result:hover{
+  filter: blur(2px);
+}
+.search-result-image{
+  max-width: 100%;
+  max-height: 100%;
+  display: block; /* Removes extra space below the image */
+  height: auto; /* Maintain aspect ratio */
+}
+.search-result-title{
+  width: 50%; /* or any specific width */
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: bold;
+}
+.search-result-desc{
+
+}
+
+/* Styling for input fields and button for a uniform look */
+input[type="text"]{
+  width: 400px;
+}
+input[type="text"], button {
+  
+  padding: 10px;
+  margin-top: 10px; /* Add space above */
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  
+}
+
+button {
+  background-color: #007bff; /* A pleasant shade of blue */
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover for feedback */
+}
+
+/* Styling for radio buttons and labels for better alignment and spacing */
+.options-container div {
+  margin: 10px 0; /* Add some vertical space between options */
+}
+
+label {
+  margin-left: 8px; /* Space out the label from the radio button */
+}
+img {
+  width: 100%;
+}
+
+/* Style modifications for search results if you plan to add dynamic content */
+#searchResults {
+  margin-top: 20px;
+}
+
+/* Additional global font styling for better readability */
+body {
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.6; /* Improve line spacing */
+}
